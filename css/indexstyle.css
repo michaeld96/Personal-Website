@@ -1,0 +1,222 @@
+/* Google Font: Titan One */
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Varela+Round&display=swap');
+/* The star means that it selects everything inside the body. */
+* 
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/**************************************** Nav Start ***************************************/
+.initials
+{
+    font-family: 'Titan One', cursive;
+    color: #f8f8ff;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+    font-size: 50px;
+    padding-left: 10px;
+}
+li > a
+{
+    text-decoration: none;
+    color: #f8f8ff;
+}
+header
+{
+    display: grid;
+    grid-template-columns: 100px minmax(100px, 1fr) 100px 100px 100px 100px;
+    background-color: rgba(0, 0, 0, .85);
+    color: #f8f8ff;
+    /* list-style: none; */
+    justify-content: center;
+    justify-items: center;
+}
+nav
+{
+    all: unset;
+    grid-column: 3/6;
+    display: flex;
+    align-items: center;
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+}
+nav li
+{
+    padding: 0px 20px;
+    margin: 0px 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+.hamburger
+{
+    display: hidden;
+}
+.hover-underline-animation
+{
+    /* Makes the underline span the width of the content. */
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.mobile-menu
+{
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+.hover-underline-animation::after
+{
+    content: "";
+    /* With after pusedo element with width 100% and 
+    position absolute to place it below the content. */
+    position: absolute;
+    width: 100%;
+    /* Set to 0 to initially hide the element. */
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/**************************************** Nav End ***************************************/
+/**************************************** Bio Start ***************************************/
+.me-section h2
+{
+    font-family: 'Titan One', cursive;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.me-section img
+{
+    border-radius: 50rem;
+    width: 200px;
+    grid-column: 1/2;
+    margin: auto auto;
+    
+    
+}
+.me-section
+{
+    display: grid;
+    grid-template-columns: 200px 50px 700px;
+    /* This centers the grid. */
+    justify-content: center;
+    padding: 40px;
+    
+}
+.bio
+{
+    grid-column: 3/4;
+    width:700px;
+    padding: 10px;
+}
+.bio p
+{
+    font-family: 'Varela Round', sans-serif; 
+    
+}
+/**************************************** Bio End ***************************************/
+/* footer
+{
+    background-color: rgba(0, 0, 0, .85);
+    height: 100px;
+} */
+@media screen and (max-width: 960px) 
+{
+    .me-section
+    {
+        grid-template-columns: 200px 20px 1fr;
+    }    
+    .bio
+    {
+        margin: 0 auto;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 735px)
+{
+    header
+    {
+        grid-template-columns: 20% 70% 10%;
+    }
+    header nav
+    {
+        
+        display: none;
+    }
+    #hamburger
+    {
+        grid-column: 3/4;
+        cursor: pointer;
+        margin: auto 0;
+    }
+    #hamburger div
+    {
+        grid-column: 3/4;
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+    .open .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+      }
+      
+      .open .bar2 {
+        opacity: 0;
+      }
+      
+      .open .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -8px);
+        transform: rotate(45deg) translate(-6px, -8px);
+      }
+
+      .open .mobile-menu
+      {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          background-color: rgb(15, 15, 15);
+      }
+      .mobile-menu li
+      {
+          list-style: none;
+          margin: 30px 0px;
+          font-family: 'Varela Round', sans-serif;
+          font-weight: bold;
+      }
+      .me-section
+      {
+          display: block;
+          margin: 0 auto;
+      }
+      .me-section img
+      {
+          display: block;
+      }
+      .bio
+      {
+          width: 100%;
+      }
+
+    
+}
