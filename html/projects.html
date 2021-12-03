@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Dick's Website</title>
+    <link rel="stylesheet" href="../css/projects.css">
+    <!-- Below is used for Font Awesome. -->
+	<script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
+    <link rel = "shortcut icon" type="image/png" href="imgs/favicon.png"/>
+</head>
+<body>
+    <header>
+        <div class="initials">md.</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class = "hover-underline-animation">Home</a></li>
+                <li><a href=""class = "hover-underline-animation">Resume</a></li>
+                <li><a href="" class = "hover-underline-animation">Projects</a></li>
+                <li><a href="" class = "hover-underline-animation">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger" onclick="toggle_mobile_menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class = "mobile-menu">
+                <li><a href="../index.html"class = "hover-underline-animation">Home</a></li>
+                <li><a href=""class = "hover-underline-animation">Resume</a></li>
+                <li><a href=""class = "hover-underline-animation">Projects</a></li>
+                <li><a href=""class = "hover-underline-animation">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="personal">
+        <h1>Personal Projects</h1>
+        <div class="center-img">
+        <img src="../imgs/code.png" class = "dude-coding" alt="Sketch of Person Coding" >
+        </div>
+        <p>As the title suggests, these are my personal projects. If you wish to visit them, click on the icons to go to the 
+            github page! 
+        </p>
+        <div class="projects">
+            <div class="tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Personal Website</h3>
+                    <i class="hover-hide fas fa-user-tie"></i>
+                    <p class = hover-show>Independently learned HTML5, CSS3, and JavaScript; wanted to apply
+                        these skills to a project. 
+                        <!-- <br>
+                        <i class="p-icon fas fa-keyboard"></i> -->
+                    </p>
+                </a>
+            </div>
+            <div class="tile grow">
+                <a href="https://github.com/michaeld96/ClassNotes">
+                    <h3>Class Notes</h3>
+                    <i class="fas fa-edit"></i>
+                    <p class = hover-show>
+                        A website made to host notes and other pieces of work to help myself and others study.
+                        This is where some games will also be hosted.
+                    </p>
+                </a>
+            </div>
+            <div class="tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Dillon Tech Service</h3>
+                    <i class="fas fa-laptop"></i>
+                    <p class = hover-show>
+                        A site I built for a local business that builds custom PC's. The site 
+                        is a simple showcase of products and easy way to communicate with the owner.
+                    </p>
+                </a>
+            </div>
+            <!-- Start of Placeholder -->
+            <div></div>
+            <!-- End of Placeholder --> 
+            <div class="tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Simple Math Game</h3>
+                    <i class="fas fa-brain"></i>
+                    <p class = hover-show>
+                        This game is on the site of Class Notes. It tests your simple arithmetic
+                        skills with a timer. Try it out! 
+                    </p>
+                </a>
+            </div>
+           <!-- Start of Placeholder --> 
+            <div></div> 
+            <!-- End of Placeholder --> 
+        </div>
+    </div>
+    <div class="grey-line"></div>
+    <div class="school">
+        <h1>School Projects</h1>
+        <p> Below are projects that I've written for a class. Unfortunately I cannot share the code publicly, but if you're interested in seeing it please let me know! (Assuming that your contacting me for employment reasons.)</p>
+        <img src="../imgs/umich.png" class = "dude-coding" alt="University of Michigan Logo">
+        <div class="projects">
+            <div class="tile umich-tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>0h h1</h3>
+                    <i class="fas fa-gamepad"></i>
+                    <p class = hover-show>
+                        Reversed engineered this simple logic game. Most of project was construced of many arrays. Built using C++.
+                    </p>
+                </a>
+            </div>
+            <div class="tile umich-tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>C++ Drawing Program</h3>
+                    <i class="fas fa-pencil-ruler"></i>
+                    <p>
+                        Program read in shapes and saves the result to a file. The classes represented shapes and putting all the shapes together made an image.
+                    </p>
+                </a>
+            </div> 
+            <div class="tile umich-tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Elevator Game</h3>
+                    <i class="far fa-building"></i>
+                    <p>
+                        Simple game shown thru the terminal, designed the architecture of the game, constructed the players controls, and designed AI algorithm to effectively the game.
+                    </p>
+                </a>
+            </div> 
+            <div class="tile umich-tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Image Resizer</h3>
+                    <i class="fas fa-image"></i>
+                    <p>
+                        An image resizing program, but the alogorithm written (by me) is seam carving, which only kept the important pixels. The result was always interesting.
+                    </p>
+                </a>
+            </div> 
+            <div class="tile umich-tile grow">
+                <a class = "eucher"href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Eucher Simulator</h3>
+                    <i class="fas fa-dice"></i>
+                    <p class = "eucher">
+                        Massive C++ project that concentrated on abstract data types, object-oriented programming, and polymorphism. Interface was thru the terminal. Can play one to four players. Also, can simulate four AI players.
+                    </p>
+                </a>
+            </div> 
+            <div class="tile umich-tile grow">
+                <a href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Linked List Server</h3>
+                    <i class="fas fa-server"></i>
+                    <p>
+                        Built a server that would read and write HTTP on stdin and stdout. Main idea was 
+                        learning linked list. Mostly written in C++.
+                    </p>
+                </a>
+            </div> 
+            <div></div> 
+            <div class="tile umich-tile grow">
+                <a  class = "eucher"href="https://github.com/michaeld96/Personal-Website">
+                    <h3>Machine Learning Categorizer</h3>
+                    <i class="pic-shrink fas fa-graduation-cap"></i>
+                    <p>
+                        Wrote a machine learning algorithm that recognized certain keywords from a Piazza post and made a accurate predication of 
+                        what subject of the course the student was talking about.
+                    </p>
+                </a>
+            </div> 
+            <div></div>
+        </div>
+    </div>
+</body>
+<script src = "../js/indexjs.js"></script>
+</html>
