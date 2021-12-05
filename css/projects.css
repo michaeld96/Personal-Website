@@ -178,10 +178,41 @@ h1
     font-size: 100%;
     font-family: 'Varela Round', sans-serif; 
 }
-.p-icon i
+.git-link
 {
+    background-color: black;
+    font-family: 'Varela Round', sans-serif; 
+    position: relative;
+    top: -100px;
+    display: inline-block;
+    line-height: 30px;
+    width: 75px;
+    border-radius: 30px;
     opacity: 0;
 }
+.git-link-dts
+{
+    background-color: black;
+    font-family: 'Varela Round', sans-serif; 
+    position: relative;
+    top: -115px;
+    display: inline-block;
+    line-height: 30px;
+    width: 75px;
+    border-radius: 30px;
+    opacity: 0;
+}
+.tile:hover .git-link-dts
+{
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+.tile:hover .git-link
+{
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
 .tile:hover > a > p
 {
     margin: 0 5px;
@@ -366,5 +397,12 @@ footer a
     .dude-coding
     {
         width: 135px;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .tile > a > p
+    {
+        font-size: .8rem;
     }
 }
