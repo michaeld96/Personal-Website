@@ -12,6 +12,7 @@
 body
 {
     background-image: linear-gradient(to bottom right,white, rgb(215, 215, 215));
+    
 }
 /**************************************** Nav Start ***************************************/
 .initials
@@ -145,14 +146,14 @@ nav li
     width: 98%;
     height: 2px;
     background-color: grey;
-    margin: 0 auto;
+    margin: 6vh auto;
 }
 /**************************************** Grey Line End ***************************************/
 /**************************************** Graphic Nav Start ***************************************/
 .graphic-nav
 {
     display: grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: 25% 25% 25%;
     grid-gap: 10%;
     justify-content: center;
     margin: 20px 30px;
@@ -205,11 +206,10 @@ nav li
 /**************************************** Footer Start ***************************************/
 footer
 {
-    margin-top: 110px;
+    margin-top: 20vh;
     text-align: center;
     background-color: rgba(0, 0, 0, .85);
     height: 125px;
-    
 }
 footer p
 {
@@ -217,6 +217,7 @@ footer p
     font-size: 1rem;
     color: white;
     font-family: 'Varela Round', sans-serif;
+
 }
 footer a
 {

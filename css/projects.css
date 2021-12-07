@@ -186,7 +186,7 @@ h1
     top: -100px;
     display: inline-block;
     line-height: 30px;
-    width: 75px;
+    width: 125px;
     border-radius: 30px;
     opacity: 0;
 }
@@ -195,7 +195,7 @@ h1
     background-color: black;
     font-family: 'Varela Round', sans-serif; 
     position: relative;
-    top: -115px;
+    top: -100px;
     display: inline-block;
     line-height: 30px;
     width: 75px;
@@ -218,7 +218,7 @@ h1
     margin: 0 5px;
     opacity: 1;
     transition: opacity 1s ease-in;
-    
+    font-size: 90%;
     position: relative;
     display: inline-block;
     font-family: 'Varela Round', sans-serif; 
@@ -306,11 +306,15 @@ footer a
     transform: scale(1.2);
 }
 /**************************************** Footer End ***************************************/
-@media screen and (max-width: 800px)
+@media screen and (max-width: 830px)
 {
+    .tile:hover > a > p
+    {
+        font-size: 75%;
+    }
     .tile p
     {
-        font-size: .85rem;
+        font-size: 75%;
     }
     .ml-cat p 
     {
@@ -398,11 +402,16 @@ footer a
     {
         width: 135px;
     }
+    .tile:hover > a > p
+    {
+        font-size: 100%;
+    }
 }
 @media screen and (max-width: 400px)
 {
-    .tile > a > p
+    .tile:hover > a > p
     {
-        font-size: .8rem;
+        font-size: 80%;
     }
+    
 }
