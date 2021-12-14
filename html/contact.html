@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/resume_style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- Below is used for Font Awesome. -->
+	<script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
+    <link rel = "shortcut icon" type="image/png" href="imgs/favicon.png"/>
+    <title>Michael Dick's Website</title>
+</head>
+<body>
+    <header>
+        <div class="initials">md.</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class = "hover-underline-animation">Home</a></li>
+                <li><a href=""class = "hover-underline-animation">Resume</a></li>
+                <li><a href="projects.html" class = "hover-underline-animation">Projects</a></li>
+                <li><a href="contact.html" class = "hover-underline-animation">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger" onclick="toggle_mobile_menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class = "mobile-menu">
+                <li><a href="../index.html"class = "hover-underline-animation">Home</a></li>
+                <li><a href=""class = "hover-underline-animation">Resume</a></li>
+                <li><a href="projects.html"class = "hover-underline-animation">Projects</a></li>
+                <li><a href=""class = "hover-underline-animation">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--------------- Start of the page -------------->
+    <div class="email-me">
+        <h1>Send an E-mail!</h1>
+        <p>Feel free to send me an email about literally anything! 
+            If you're interested in any school project code it has to be 
+            for employment reasons due to the Honor Code at the University of Michigan.
+            Other than that if you want to talk about anything, please feel free to send it my way!
+        </p>
+    </div>
+    <form class = "contact-form" action="contact.php" method = "post">
+        <input type="text" name="name" placeholder = "Full Name">
+        <input type="text" name="mail" placeholder = "example@email.com">
+        <input type="text" name="subject">
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <button type = "submit" name = "submit">Send</button>
+
+
+    </form>
+
+    <script src = "../js/indexjs.js"></script>
+</body>
