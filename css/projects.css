@@ -409,10 +409,15 @@ footer a
     }
     .dts-git-link
     {
-        bottom: 80px;
+        bottom: 110px;
+    }
+    .tile > a > h3
+    {
+        font-size: 1.2rem;
+        padding: 5px
     }
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 400px)
 {
     .tile:hover > a > p
     {
