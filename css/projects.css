@@ -25,6 +25,12 @@ body
     padding-left: 10px;
     text-align: left;
 }
+.initials > a
+{
+    text-decoration: none;
+    color: #f8f8ff;
+    transition: all ease-in-out .5s;
+}
 li > a
 {
     text-decoration: none;

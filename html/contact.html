@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="initials">md.</div>
+        <div class="initials"><a href = "../index.html">md.</a></div>
         <nav>
             <ul>
                 <li><a href="../index.html" class = "hover-underline-animation">Home</a></li>
@@ -43,15 +43,27 @@
             Other than that if you want to talk about anything, please feel free to send it my way!
         </p>
     </div>
-    <!-- Current server only takes static websites. PHP talks to a server,
-    and Github doesn't allow servers to be talked to. -->
-    <!-- <form class = "contact-form" action="../php/contact.php" method = "post">
-        <input type="text" name="name" placeholder = "Full Name">
-        <input type="text" name="mail" placeholder = "example@email.com">
-        <input type="text" name="subject">
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-        <button type = "submit" name = "submit">Send</button>
-    </form> -->
-
+<div class = "contact-form">
+    <form method = "post" action="https://forms.un-static.com/forms/fab668d1308da5eca629acd635fab8aeedf4f74c">
+        <label for="name">Name</label>
+        <input name = "name" type="text" class = "input-name" placeholder="Please Enter Your Name">
+        <label for="email">Email</label>
+        <input name = "email" type="email" class = "input-email" placeholder="user@example.com">
+        <label for="subject">Subject</label>
+        <input name = "subject" type="text" class = "input-subject" placeholder="Enter Subject"> 
+        <label for="message">Message</label>
+        <textarea name="message" class = "input-message" cols="30" rows="10" placeholder="Write me a message :)"></textarea>
+        <button type = "submit" class = "submit-button">Send <i class="far fa-paper-plane"></i></button>
+        <button type = "reset" class = "reset-button">Reset <i class="fas fa-power-off"></i></button>
+    </form>
+    <!-- <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p> -->
+</div>    
+<footer>
+    <p>This website was created by ©Michael Dick.</p>
+    <a href="https://github.com/michaeld96"><i class="fab fa-github grow-icons"></i></a>
+    <a href="https://www.instagram.com/_mikedick_/"><i class="fab fa-instagram grow-icons"></i></a>
+    <a href="https://stackoverflow.com/users/15560006/michael"><i class="fab fa-stack-overflow grow-icons"></i></a>
+    <a href="https://www.linkedin.com/in/michaeldi1996/"><i class="fab fa-linkedin-in grow-icons"></i></a>
+</footer>
     <script src = "../js/indexjs.js"></script>
 </body>
