@@ -254,6 +254,10 @@ h1
 }
 @media screen and (max-width: 930px)
 {
+.git-link
+{
+    bottom: 100px;
+}
 .tile > a > h3
 {
     font-size: 1.2rem;
