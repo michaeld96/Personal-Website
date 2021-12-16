@@ -183,26 +183,27 @@ h1
     background-color: black;
     font-family: 'Varela Round', sans-serif; 
     position: relative;
-    bottom: 50%; 
+    bottom: 100px;
     display: inline-block;
     line-height: 30px;
     width: 125px;
     border-radius: 30px;
     opacity: 0;
 }
-.git-link-dts
+.dts-git-link
 {
     background-color: black;
     font-family: 'Varela Round', sans-serif; 
     position: relative;
-    top: -100px;
+    bottom: 110px;
     display: inline-block;
     line-height: 30px;
-    width: 75px;
+    width: 125px;
     border-radius: 30px;
     opacity: 0;
 }
-.tile:hover .git-link-dts
+
+.tile:hover .dts-git-link
 {
     opacity: 1;
     transition: opacity 1s ease-in;
@@ -406,6 +407,10 @@ footer a
     {
         font-size: 100%;
     }
+    .dts-git-link
+    {
+        bottom: 80px;
+    }
 }
 @media screen and (max-width: 500px)
 {
@@ -427,6 +432,10 @@ footer a
     {
         font-size: 1.2rem;
         padding: 5px
+    }
+    .dts-git-link
+    {
+        bottom: 100px;
     }
     
 }
