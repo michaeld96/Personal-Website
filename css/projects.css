@@ -407,7 +407,7 @@ footer a
         font-size: 100%;
     }
 }
-@media screen and (max-width: 400px)
+@media screen and (max-width: 500px)
 {
     .tile:hover > a > p
     {
@@ -418,7 +418,7 @@ footer a
         background-color: black;
         font-family: 'Varela Round', sans-serif; 
         position: relative;
-        bottom: 58%; 
+        bottom: 75px; 
         display: inline-block;
         line-height: 30px;
         width: 125px;
