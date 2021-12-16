@@ -145,7 +145,7 @@ h1
 .tile > a > h3
 {
     font-family: 'Titan One', cursive;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     overflow-wrap: break-word;
     margin: 0 15px;
 }
@@ -183,7 +183,7 @@ h1
     background-color: black;
     font-family: 'Varela Round', sans-serif; 
     position: relative;
-    bottom: 100px;
+    bottom: 80px;
     display: inline-block;
     line-height: 30px;
     width: 125px;
@@ -195,7 +195,7 @@ h1
     background-color: black;
     font-family: 'Varela Round', sans-serif; 
     position: relative;
-    bottom: 110px;
+    bottom: 90px;
     display: inline-block;
     line-height: 30px;
     width: 125px;
@@ -414,7 +414,7 @@ footer a
     .tile > a > h3
     {
         font-size: 1.2rem;
-        padding: 5px
+        padding: 5px;
     }
 }
 @media screen and (max-width: 400px)
