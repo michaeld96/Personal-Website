@@ -270,11 +270,16 @@ h1
     font-size: .75rem;
 }
 
-}
+
 
 .eucher p 
 {
     font-size: .75rem;
+}
+.dts-git-link
+{
+    bottom: 110px;
+}
 }
 /**************************************** Footer Start ***************************************/
 footer
