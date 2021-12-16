@@ -254,6 +254,10 @@ h1
 }
 @media screen and (max-width: 930px)
 {
+.tile > a > h3
+{
+    font-size: 1.2rem;
+}
 .tile p
 {
     top: -115px;
@@ -269,13 +273,11 @@ h1
 {
     font-size: .75rem;
 }
-
-
-
 .eucher p 
 {
     font-size: .75rem;
 }
+
 .dts-git-link
 {
     bottom: 110px;
