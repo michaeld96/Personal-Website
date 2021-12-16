@@ -50,6 +50,7 @@ button
     cursor: pointer;
     line-height: 30px;
     transition: ease-in .5s;
+    text-decoration: none;
 }
 button:hover
 {
