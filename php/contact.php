@@ -1,4 +1,6 @@
+
 <?php
+//NOTE: DOES NOT WORK ON A STATIC WEBSITE.
 //We are looking for name = submit in our html.
 //isset() is a PHP function.
 if(isset($_POST['submit']))
