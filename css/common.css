@@ -1,0 +1,93 @@
+/**************************************** Nav Start ***************************************/
+.initials
+{
+    font-family: 'Titan One', cursive;
+    color: #f8f8ff;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+    font-size: 50px;
+    padding-left: 10px;
+    text-align: left;
+}
+.initials > a
+{
+    text-decoration: none;
+    color: #f8f8ff;
+    transition: all ease-in-out .5s;
+}
+li > a
+{
+    text-decoration: none;
+    color: #f8f8ff;
+}
+header
+{
+    display: grid;
+    grid-template-columns: 100px minmax(100px, 1fr) 100px 100px 100px 100px 100px;
+    background-color: rgba(0, 0, 0, .85);
+    color: #f8f8ff;
+    /* list-style: none; */
+    justify-content: center;
+    justify-items: center;
+}
+nav
+{
+    all: unset;
+    grid-column: 3/6;
+    display: flex;
+    align-items: center;
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+}
+nav li
+{
+    padding: 0px 20px;
+    margin: 0px 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+.hamburger
+{
+    display: hidden;
+}
+.hover-underline-animation
+{
+    /* Makes the underline span the width of the content. */
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.mobile-menu
+{
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+.hover-underline-animation::after
+{
+    content: "";
+    /* With after pusedo element with width 100% and 
+    position absolute to place it below the content. */
+    position: absolute;
+    width: 100%;
+    /* Set to 0 to initially hide the element. */
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/**************************************** Nav End ***************************************/
