@@ -6,34 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Dick's Website</title>
     <link rel="stylesheet" href="../css/projects.css">
+    <link rel = "stylesheet" href = "../css/common.css">
     <!-- Below is used for Font Awesome. -->
 	<script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
     <link rel = "shortcut icon" type="image/png" href="imgs/favicon.png"/>
     <link rel="icon" href="../imgs/initials.png">
 </head>
 <body>
-    <header>
-        <div class="initials"><a href = "../index.html">md.</a></div>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class = "hover-underline-animation">Home</a></li>
-                <li><a href="resume.html"class = "hover-underline-animation">Resume</a></li>
-                <li><a href="" class = "hover-underline-animation">Projects</a></li>
-                <li><a href="contact.html" class = "hover-underline-animation">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="hamburger" onclick="toggle_mobile_menu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class = "mobile-menu">
-                <li><a href="../index.html"class = "hover-underline-animation">Home</a></li>
-                <li><a href="resume.html"class = "hover-underline-animation">Resume</a></li>
-                <li><a href=""class = "hover-underline-animation">Projects</a></li>
-                <li><a href="contact.html"class = "hover-underline-animation">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+    <div id="navbar"></div>
     <div class="personal">
         <h1>Personal Projects</h1>
         <div class="center-img">
@@ -180,4 +160,5 @@
     <a href="https://www.linkedin.com/in/michaeldi1996/"><i class="fab fa-linkedin-in grow-icons"></i></a>
 </footer>
 <script src = "../js/indexjs.js"></script>
+<script src = "../js/navbar-loader.js"></script>
 </html>
