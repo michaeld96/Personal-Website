@@ -13,7 +13,7 @@
 body
 {
     background-image: linear-gradient(to bottom right,white, rgb(215, 215, 215));
-    
+    height: 100%;
 }
 /**************************************** Nav Start ***************************************/
 .initials
@@ -213,7 +213,10 @@ nav li
 /**************************************** Footer Start ***************************************/
 footer
 {
-    margin-top: 20vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* margin-top: 20vh; */
     text-align: center;
     background-color: rgba(0, 0, 0, .85);
     height: 125px;
