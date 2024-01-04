@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('navbar').innerHTML = data;
 
         // Update the href attributes of anchor tags within the navbar
-        document.querySelectorAll('#navbar a').forEach(link => {
+        document.querySelectorAll('a').forEach(link => {
             let href = link.getAttribute('href');
-
+            
             // Adjust href based on current directory
             if (isInsideHtmlDirectory) 
             {
@@ -25,10 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 if (href.match("index.html"))
                 {
-                    console.log(href);
-                    // link.setAttribute('href', href.replace('html/', '../'));
                     link.setAttribute('href', '../index.html')
-                    console.log(href);
                 }
             } 
         });

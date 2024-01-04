@@ -1,4 +1,5 @@
 # My Personal Website
 
 ## TODO:
-- [ ] Update Resume
+- [ ] Update Resume.
+- [ ] Finish Blog.
