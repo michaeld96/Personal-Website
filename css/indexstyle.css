@@ -42,7 +42,7 @@ li > a
 header
 {
     display: grid;
-    grid-template-columns: 100px minmax(100px, 1fr) 100px 100px 100px 100px;
+    grid-template-columns: 100px minmax(100px, 1fr) 100px 100px 100px 100px 100px;
     background-color: rgba(0, 0, 0, .85);
     color: #f8f8ff;
     /* list-style: none; */
