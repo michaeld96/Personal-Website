@@ -9,6 +9,7 @@
 }
 body
 {
+    height: 100vh;
     /* background-image: linear-gradient(to bottom right,white, rgb(215, 215, 215)); */
 }
 /**************************************** Nav Start ***************************************/
@@ -243,6 +244,9 @@ h3
 /**************************************** Footer Start ***************************************/
 footer
 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     margin-top: 110px;
     text-align: center;
     background-color: rgba(0, 0, 0, .85);
