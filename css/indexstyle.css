@@ -10,12 +10,6 @@
     
 }
 
-body
-{
-    background-image: linear-gradient(to bottom right,white, rgb(215, 215, 215));
-    height: 100vh;
-    /* height: 100%; */
-}
 /**************************************** Bio Start ***************************************/
 .me-section h2
 {
@@ -124,7 +118,7 @@ footer
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* margin-top: 20vh; */
+    margin-top: 20vh;
     text-align: center;
     background-color: rgba(0, 0, 0, .85);
     height: 125px;
@@ -175,9 +169,9 @@ footer a
 @media screen and (max-width: 735px)
 {
     /* Footer acts weird on home page. Duct tape for the moment.*/
-    footer
+    /* footer
     {
         bottom: -300px;
-    }
+    } */
     
 }

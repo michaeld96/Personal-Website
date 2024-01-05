@@ -1,3 +1,9 @@
+body
+{
+    background-image: linear-gradient(to bottom right,white, rgb(215, 215, 215));
+    /* height: 100vh; */
+    /* height: 100%; */
+}
 /**************************************** Nav Start ***************************************/
 .initials
 {
@@ -91,6 +97,7 @@ nav li
     transform-origin: bottom left;
 }
 /**************************************** Nav End ***************************************/
+
 
 @media screen and (max-width: 735px)
 {

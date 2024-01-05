@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/indexstyle.css">
-    <link rel = "stylesheet" href="../css/common.css">
-    <link rel = "stylesheet" href="../css/blog.css">
-    <!--- Below is used for Font Awesome. --->
+    <link rel="stylesheet" href="../css/resume_style.css">
+    <link rel = "stylesheet" href = "../css/common.css">
+    <link rel="stylesheet" href="../css/blog-post.css">
+    <!-- Below is used for Font Awesome. -->
 	<script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
     <link rel = "shortcut icon" type="image/png" href="imgs/favicon.png"/>
-    <link rel="icon" href="imgs/initials.png">
+    <link rel="icon" href="../imgs/initials.png">
     <title>Michael Dick's Website</title>
 </head>
-<!-- Remember to change this when we have too many posts! -->
-<body style = "height: 100vh">
+<body>
     <div id="navbar"></div>
-    <div id="blog-posts">
-        <a id = "blog-heading" href = "../blog/sdl.html">Basics of SDL:</a>
-        <div id="blog-summary">
+    <div id="blog">
+        <div id="blog-title">
+            <p><u>Basics of SDL</u></p>
+        </div>
+        <div id="blog-body">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
                 the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
@@ -28,15 +29,10 @@
                 and more recently with desktop publishing software like Aldus PageMaker including versions of 
                 Lorem Ipsum.
             </p>
-            <img id = "blog-img" src = "../imgs/sdl.svg">
-                
-            </p>
         </div>
     </div>
     <div id="footer"></div>
+    <script src = "../js/indexjs.js"></script>
+    <script src = "../js/navbar-loader.js"></script>
+    <script src = "../js/footer-loader.js"></script>
 </body>
-<!-- <script src = "js/indexjs.js"></script> -->
-<script src = "../js/indexjs.js"></script>
-<script src = "../js/navbar-loader.js"></script>
-<script src = "../js/footer-loader.js"></script>
-</html>
