@@ -1,4 +1,6 @@
 # My Personal Website
 
 ## TODO:
-- [ ] Update Resume
+- [ ] Update Resume.
+- [ ] Finish Blog.
+- [ ] Fix footer issue. When making page small then large it defaults to wrong CSS configurations.

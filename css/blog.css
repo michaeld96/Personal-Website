@@ -1,0 +1,53 @@
+/* TODO: Uncomment these when it too many posts. */
+/* html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+} */
+#blog-posts
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 50px;
+}
+#blog-heading
+{
+    color: black;
+    font-family: 'Titan One', cursive;
+    font-size: 200%;
+    max-width: max-content;
+}
+#blog-summary
+{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 2%;
+    padding: 10px;
+    font-family: 'Varela Round', sans-serif; 
+}
+#blog-img
+{
+    width: 100%;
+    margin: auto 0;
+    /* height: 100%; */
+}
+@media screen and (max-width: 735px)
+{
+    #blog-summary
+    {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Varela Round', sans-serif; 
+    }
+}
+/* TODO: Change when the number of links grow off the page. */
+/* footer
+{
+    position: relative;
+} */

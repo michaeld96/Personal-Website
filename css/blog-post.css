@@ -1,0 +1,18 @@
+#blog
+{
+    text-align: center;
+    margin: 5% 30%;
+}
+#blog-title > p
+{
+    font-size: 250%;
+    color: black;
+    font-family: 'Titan One', cursive;
+}
+#blog-body > p
+{
+    text-align: left;
+    font-family: 'Varela Round', sans-serif; 
+    margin-top: 20px;
+    font-size: 125%;
+}

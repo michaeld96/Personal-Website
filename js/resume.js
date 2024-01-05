@@ -1,18 +1,3 @@
-// function toggle_html_resume()
-// {
-//     console.log(document.getElementById("hide-html").className);
-//     if(document.getElementById("hide-html").className == "hide")
-//     {
-        
-//         document.getElementById("hide-html").className = "show";
-//         console.log(document.getElementById("hide-html").className);
-//     }
-//     else
-//     {
-//         document.getElementById("hide-html").className = "hide";
-//     }
-// }
-
 var render_once = false;
 
 var resume_container = document.querySelector(".resume-container");
@@ -20,6 +5,7 @@ var resume_container = document.querySelector(".resume-container");
 var hide_html = document.querySelector("#hide-html");
 
 var footer = document.querySelector("footer");
+// var footer = getElementById("footer");
 
 resume_container.addEventListener('click', function() {
     if (!render_once) 
@@ -131,7 +117,10 @@ resume_container.addEventListener('click', function() {
         </div>
         `;
         hide_html.insertAdjacentHTML('beforeend', new_html);
+        var footer = document.getElementsByTagName("footer")[0];
         footer.style.position = "relative";
     }
+
+    // footer.style.position = "relative";
 
 })
