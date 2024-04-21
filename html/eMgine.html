@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Dick's Website</title>
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel = "stylesheet" href = "../css/common.css">
+    <link ref="stylesheet" href = "../css/eMgine.css">
+    <!-- Below is used for Font Awesome. -->
+    <script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
+    <link rel = "shortcut icon" type="image/png" href="imgs/favicon.png"/>
+    <link rel="icon" href="../imgs/initials.png">
+    <style>
+        body {
+            background-color: red;
+        }
+        #content-grid 
+        {
+            margin: 10px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-item 
+        {
+            border-radius: 15px;
+            padding: 20px;
+            /* display: flex; */
+            justify-content: center; 
+            align-items: center;
+            border: 2px solid #666363; /* Example border */
+            box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.4);
+        }
+        img
+        {
+            width: 100%;
+            height: 100%;
+            max-width: 500px;  
+            max-height: 500px;
+        }
+        .image
+        {
+            justify-content: center;
+            width: 100%;
+        }
+        .text 
+        {
+            padding: 10px;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.5em;
+            /* font-size: 100%; */
+            padding: 0 10px; 
+        }
+        .many
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .many img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .tools ul 
+        {
+            margin-left: 0; /* Resets the default margin */
+            padding-left: 20px; /* Adjust this value as needed to bring bullets closer or farther */
+            list-style-position: inside; /* Places the bullet inside the content flow */
+            text-align: left;
+        }
+        .tools ul li a
+        {
+            color: black;
+        }
+        @media (max-width: 735px) 
+        {
+            img
+            {
+                width: 100%;
+                height: 100%;
+            }
+            #content-grid 
+            {
+                grid-template-columns: 1fr; /* Stack items on top of each other in a single column */
+            }
+            
+            .grid-item.image 
+            {
+                grid-column: span 1; /* Reset to default in a single column layout */
+            }
+            .grid-item iframe {
+            width: 100%;
+            height: auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="content-grid">
+        <div class="grid-item image">
+            <img src = "../imgs/emgine.png" >
+        </div>
+        <div class="grid-item text">
+            Emgine is the product of a course I have take at the University of Michigan; the 
+            course is EECS 498-007 Game Engine Architecture. This course was a deep dive into
+            the inner workings of game engines and how they are built, and we made many iterations of building
+            this game engine from 
+            building a text based game engine to a full 2D game engine with scripting from Lua with 
+            component based architecture.
+        </div>
+        <div class="grid-item text">This engine was built with the following tools: (Click to list item to visit site!)
+            <div class=""></div>
+            <div class="tools">
+                <ul>
+                    <li><a href="https://cplusplus.com/" target="_blank">C++</a></li>
+                    <li><a href="https://box2d.org/" target="_blank">Box2D</a></li>
+                    <li><a href="https://www.libsdl.org/" target="_blank">SDL2</a></li>
+                    <li><a href="https://github.com/g-truc/glm" target="_blank">GLM</a></li>
+                    <li><a href="https://www.lua.org/" target="_blank">Lua</a></li>
+                    <li><a href="https://www.json.org/json-en.html" target="_blank">jSON</a></li>
+                    <li><a href="https://github.com/vinniefalco/LuaBridge" target="_blank">LuaBridge</a></li>
+                    <li><a href="https://github.com/ocornut/imgui" target="_blank">Dear ImGui</a></li>
+                    <li><a href="https://github.com/aiekick/ImGuiFileDialog" target="_blank">ImGui File Dialog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item image many">
+            <img src = "../imgs/box2d.png" >
+            <img src = "../imgs/lua.png" >
+            <img src = "../imgs/sdl.png" >
+            <img src = "../imgs/glm.png" >
+        </div>
+        <div class="grid-item image">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="grid-item text">
+            For our final project, we were tasked to build an extension for our 
+            game engine. I chose to build an editor that would allow users to create, edit, and 
+            run their games all in one location. I was inspired by other game engines like Unity and
+            Unreal Engine. To the right is a video of the editor in action.
+
+            <br>
+            Visit the GitHub page for the project:
+            <a href="https://github.com/michaeld96/eMgine" target="_blank">here</a>.
+        </div>
+      </div>
+      
+</body>
+<script src = "../js/navbar-loader.js"></script>
+</html>

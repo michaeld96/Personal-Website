@@ -1,0 +1,42 @@
+body {
+    background-color: #FF5733;
+}
+
+#content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    grid-auto-rows: minmax(100px, auto); /* Row height to be minimum 100px or auto-sized */
+    gap: 10px; /* Space between grid items */
+    width: 100%; /* Full width of the container */
+    margin: auto; /* Center the grid horizontally */
+    max-width: 1200px; /* Max width of the grid, can adjust to suit your design */
+    background-color: #FF5733;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px; /* Padding inside grid items */
+    border: 2px solid #FF5733; /* Border as per your sketch, change as needed */
+}
+
+.grid-item.image {
+    grid-column: span 2; /* Image spans two columns */
+}
+
+.grid-item.text {
+    /* background-color: #fff; Optional: background for the text areas */
+    color: #FF5733;
+}
+
+/* Responsive behavior if needed */
+@media (max-width: 735px) {
+    #content-grid {
+        grid-template-columns: 1fr; /* Stack items on top of each other in a single column */
+    }
+    
+    .grid-item.image {
+        grid-column: span 1; /* Reset to default in a single column layout */
+    }
+}
