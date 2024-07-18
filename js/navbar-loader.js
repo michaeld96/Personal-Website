@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let navbarPath;
     let isInsideHtmlDirectory = window.location.pathname.includes('/html/');
     let blog_dir = window.location.pathname.includes('/blog/');
-    console.log(blog_dir);
     let emgine_dir = window.location.pathname.includes('/emgine/');
 
     // Determine the correct path to the navbar file

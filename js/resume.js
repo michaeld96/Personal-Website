@@ -12,7 +12,6 @@ resume_container.addEventListener('click', function() {
     {
         render_once = true;
         document.getElementById("hide-html").className = "show";
-        console.log("ss");
         var new_html = `
         <div class="html-resume">
         <div class="grey-line"></div>
@@ -20,9 +19,7 @@ resume_container.addEventListener('click', function() {
             <img src="../imgs/me.png" alt="Me">
                 <div class="bio-right">
                 <h2 class = "name">Michael Dick</h2>
-                <p class = "address"><a  target = "_blank" href="https://www.google.com/maps/place/University+of+Michigan/@42.2780591,-83.7469574,15z/data=!3m1!4b1!4m5!3m4!1s0x883cae38e7de1701:0x5ba14e5178e997e3!8m2!3d42.2780436!4d-83.7382241" class = "bio-icon"><i class="fas fa-home"></i></a>Ann Arbor, MI 48104</p>
-                <p class = "phone"><a class = "bio-icon"><i class="fas fa-phone-alt"></i></a>616-902-8922</p>
-                <p class = "email"><a href="contact.html" target = "_blank" class = "bio-icon"><i class="far fa-paper-plane"></i></a>mikedick@umich.edu</p>
+                <p class = "address"><a  target = "_blank" href="https://www.google.com/maps/place/University+of+Michigan/@42.2780591,-83.7469574,15z/data=!3m1!4b1!4m5!3m4!1s0x883cae38e7de1701:0x5ba14e5178e997e3!8m2!3d42.2780436!4d-83.7382241" class = "bio-icon"><i class="fas fa-home"></i></a>Ann Arbor, MI 48105</p>
                 <p class = "linkedin"><a href="https://www.linkedin.com/in/michaeldi1996/" target = "_blank"class = "bio-icon"><i class="fab fa-linkedin-in"></i></a>https://www.linkedin.com/in/michaeldi1996/</p>
                 <p><a href="http://miketdick.com/"><i class="fas fa-map-marker-alt"></i></a>miketdick.com</p>
             </div>
@@ -36,17 +33,10 @@ resume_container.addEventListener('click', function() {
             <div class="descript">
                 <h4>University of Michigan</h4>
                 <p>Bachelor of Science and Engineering in Computer Science</p>
-                <p><b>GPA:</b> 3.84/4.00</p>
-                <p>Relevant Coursework: EECS 183 (Elementary Programming Concepts), EECS 203 (Discrete Mathematics), EECS 280 (Programming and Intro Data Structures), EECS 270 (Logic Design), EECS 376(Foundations of Computer Science)</p>
-            </div>
-            <div class="section">
-                <p><i>May 2019</i></p>
-            </div> 
-            <div class="descript">
-                <h4>Grand Rapids Community College</h4>
-                <p>Associate of Arts</p>
-                <p><b>GPA:</b> 3.73/4.00 (Dean's List: Fall 2018, Winter 2019)</p>
-                <p>Relevant Coursework: CIS 123(Computer Science 1), CIS 171 (Database Design and Development)</p>
+                <p><b>GPA:</b> 3.62/4.00</p>
+                <p>
+                Applied Parallel Programming with GPUs, Computer Vision, Compilers, Game Engine Architecture, Human-Centered Software Design and Development, Data Structures and Algorithms, Intro to Computer Architecture
+                </p>
             </div>
             <h3>PROFESSIONAL EXPERIENCE</h3>
             <p></p>

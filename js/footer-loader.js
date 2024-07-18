@@ -1,4 +1,4 @@
-function update_footer_style () 
+function update_footer_style() 
 {
     let loader_path;
     let window_width = window.innerWidth;
