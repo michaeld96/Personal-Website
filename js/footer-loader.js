@@ -20,7 +20,7 @@ function update_footer_style()
         if (!inside_html_directory && window_width < 735) 
         {
             footer.style.position = "relative";
-            footer.style.bottom = "-300px";
+            footer.style.bottom = "-500px";
         }
         else if (!inside_html_directory && window_width >= 735)
         {
@@ -35,11 +35,25 @@ function update_footer_style()
     })
 }
 
+function footer_style()
+{
+    let footer = document.getElementById('footer');
+    if (footer)
+    {
+        footer.style.bottom = "-100px";
+        console.log("footer should be updated")
+    }
+}
+
 document.addEventListener('DOMContentLoaded', update_footer_style);
+document.addEventListener('DOMContentLoaded', footer_style);
+
 
 window.addEventListener('resize', function() {
+    console.log(this.innerWidth);
     if (this.innerWidth < 735)
     {
         update_footer_style();
     }
 })
+
