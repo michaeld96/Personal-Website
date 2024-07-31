@@ -9,8 +9,14 @@
 }
 body
 {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     /* background-image: linear-gradient(to bottom right,white, rgb(215, 215, 215)); */
+}
+.content
+{
+    flex: 1;
 }
 /**************************************** Version Container Start ***************************************/
 .selection-p
@@ -151,7 +157,7 @@ h3
 /**************************************** Footer Start ***************************************/
 footer
 {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     bottom: 0;
     margin-top: 110px;
