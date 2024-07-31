@@ -3,7 +3,7 @@ function update_footer_style()
     let loader_path;
     let window_width = window.innerWidth;
     let inside_html_directory = window.location.pathname.includes('/html');
-    let blog_dir = window.location.pathname.includes('/blog');
+    let blog_dir = window.location.pathname.includes('/blog/');
     if (!blog_dir)
     {
         footer_path = inside_html_directory ? '../html/footer.html' : 'html/footer.html';
