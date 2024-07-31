@@ -1,18 +1,27 @@
 #blog
 {
-    text-align: center;
-    margin: 5% 30%;
+    /* text-align: center; */
+    margin: 5% 20%;
 }
-#blog-title > p
+#blog-title 
 {
     font-size: 250%;
     color: black;
     font-family: 'Titan One', cursive;
+    text-align: center;
 }
-#blog-body > p
+#blog-title > a
+{
+    color: black;
+}
+.text-content
 {
     text-align: left;
     font-family: 'Varela Round', sans-serif; 
     margin-top: 20px;
-    font-size: 125%;
+    font-size: 110%;
+}
+.text-content > li
+{
+    margin-left: 5rem;
 }

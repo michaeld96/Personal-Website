@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/resume_style.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/blog-post.css">
+    <!-- Below is used for Font Awesome. -->
+    <script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="../../imgs/favicon.png"/>
+    <link rel="icon" href="../../imgs/initials.png">
+    <title>Michael Dick's Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="blog">
+        <div id="blog-title">
+            <a href="../blog.html">CMake Basics</a>
+        </div>
+        <div id>
+            <p class = "text-content">
+                To begin our journey, we are going to first make a <code>CMakeLists.txt</code>, and this 
+                will tell how to generate the Makefile or other files you would want generated.
+
+                <br><br>
+                There is a few things we need in order to create our project:
+                <ul class = "text-content">
+                    <li>Setting the version of CMake: <code>cmake_minimum_required(VERSION 3.10)</code></li>
+                    <li>Naming your project and the version of it: <code>project(&lt;project-name&gt; VERSION &lt;
+                        version-number&gt)</code></li>
+                    <li>Set the standard (you can choose to enforce it if you would like): <code>set(CMAKE_CXX_STANDARD &
+                        lt;cpp-version&gt;)</code></li>
+                    <li>Set the source files: <code>set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/&lt;file&gt;.cpp)</code></li>
+                    <li>Lastly, you will set the executable with all the source files and the name of the executable: 
+                        <code>add_executable(&lt;name-of-exe&gt;)</code></li>
+                </ul>
+                
+            </p>
+            <p class = "text-content">
+                We will create our <code>CMakeLists.txt</code> and put the items listed above in it. Below is an example of mine.
+            </p>
+            <pre><code class="language-make">
+cmake_minimum_required(VERSION 3.10) 
+set(PROJECT_NAME RayMaster)
+# Project name and version.
+project(${PROJECT_NAME} VERSION 0.1)
+
+# Set the C++ Standard.
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED true)
+
+# Set default build to debug.
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
+
+# Add source files.
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/raymaster_driver.cpp)
+
+# Add executable
+add_executable(${PROJECT_NAME}  ${SRC_FILES})
+            </code></pre>
+            <p class = "text-content">
+                Now in order to make this run we will need to create a directory, conventionally <code>build</code>, and 
+                run the following command <code>cmake ..</code> This will generate your makefile! Below is just an 
+                example of it being put in the terminal.
+            </p>
+            <pre><code class="language-make">
+mkdir build # create the build folder
+cd build
+cmake .. # from the build folder, run the cmake CLI command.
+                </code></pre>
+                <p class = "text-content">
+                    We've just generated our first Makefile! 
+                </p>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../js/indexjs.js"></script>
+    <script src="../../js/navbar-loader.js"></script>
+    <script src="../../js/footer-loader.js"></script>
+</body>
+</html>

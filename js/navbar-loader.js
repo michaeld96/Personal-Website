@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let href = link.getAttribute('href');
             // link.setAttribute('href', href.replace('html/', '../html/'))
             // console.log(link);
-            
+            console.log("aaaaaa");
             // Adjust href based on current directory
             if (isInsideHtmlDirectory && !is_inside_blog_dir) 
             {
@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 if (href.includes("index.html"))
                 {
-                    link.setAttribute('href', '../index.html');
+                    link.setAttribute('href', '../../index.html');
                 }
                 else
                 {
-                    link.setAttribute('href', href.replace('html/', '../html/'));
+                    link.setAttribute('href', href.replace('html/', '../'));
                 }
             } 
         });
