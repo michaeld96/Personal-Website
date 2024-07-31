@@ -10,7 +10,7 @@ function update_footer_style()
     }
     else
     {
-        footer_path = '../html/footer.html';
+        footer_path = '../footer.html';
     }
     
     fetch(footer_path)
