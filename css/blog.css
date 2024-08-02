@@ -28,9 +28,13 @@ body
     display: grid;
     grid-template-columns: 80% 20%;
     gap: 2%;
-    padding: 10px;
+    /* padding: 10px; */
     font-family: 'Varela Round', sans-serif; 
 }
+/* #blog-summary > p
+{
+    padding: 10px;
+} */
 #blog-img
 {
     width: 100%;
