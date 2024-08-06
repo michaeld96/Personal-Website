@@ -25,3 +25,15 @@
 {
     margin-left: 5rem;
 }
+
+@media screen and (max-width: 735px)
+{
+    .text-content > li
+    {
+        margin-left: 0rem;
+    }
+    #blog
+    {
+        margin: 5% 10%;
+    }
+}
